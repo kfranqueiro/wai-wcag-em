@@ -17,10 +17,17 @@ jobs:
     steps:
       - name: Checkout git repository
         uses: actions/checkout@v4
+      - run: |
+          mkdir -p _site
       - name: Run spec-prod
         uses: w3c/spec-prod@v2
-#      - name: Upload Pages artifact
-#        uses: actions/upload-pages-artifact@v3
+        with:
+          SOURCE: index.html
+          DESTINATION: _site/index.html
+      - run: |
+          ls -lR
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
 
   deploy:
     needs: build
@@ -32,5 +39,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-        with:
-          artifact_name: spec-prod-result
