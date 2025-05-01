@@ -51,6 +51,7 @@ This methodology is applicable to the broad variety of website types. The follow
 
 **Note:** Websites using responsive design techniques (i.e. adapting the presentation according to user hardware, software, and preferences) as opposed to redirecting the user to a different location are not considered to be independent website versions.</dd>
 
+
 <dt>Website Using Responsive Design</dt>
 <dd>Responsive design techniques adjust the order, flow, and sometimes behavior of the content to best suit the device on which it is used. For example, to adjust the content and functionality according to the size of the viewport, screen resolution, orientation of the screen, and other aspects of a mobile device and the context in which it is being used. In this methodology such changes to the content, functionality, appearance, and behavior are not considered to be independent website versions but rather [web page states](#states) that need to be included in the evaluation scope.
 
